@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg: #0a0a0a;
+  --muted: #9ca3af;
+}
+
+html, body, #__next { height: 100%; }
+body { background: var(--bg); color: #fff; }
+
+/* thin gold separators */
+.hr-gold {
+  @apply w-full border-t border-[#d4af3726];
+}
