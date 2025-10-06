@@ -1,21 +1,22 @@
-import "./globals.css";
-import { Inter } from "next/font/google";
-import { Playfair_Display } from "next/font/google";
+import './globals.css'
+import { Cinzel } from 'next/font/google'
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" });
+const cinzel = Cinzel({
+  subsets: ['latin'],
+  weight: ['400', '700'],
+})
 
 export const metadata = {
-  title: "Elite Muse Agency",
-  description: "Elegance meets strategy. Feminine energy meets precision.",
-};
+  title: 'Elite Muse Agency',
+  description: 'Luxury personal branding for exceptional women.',
+}
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable} ${playfair.variable} antialiased`}>
+      <body className={`${cinzel.className} bg-black text-white`}>
         {children}
       </body>
     </html>
-  );
+  )
 }
